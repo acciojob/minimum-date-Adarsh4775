@@ -1,7 +1,10 @@
 function minDate(dates) {
   //write you code here
-}
-
+	let dateObject = dates.map(dateString => new Date(dateString));
+    let  minDate = new Date(Math.min(...dateObject));
+	return minDate;
+} 
+ 
 // Do not change the code
 
 var dates = [
@@ -33,7 +36,7 @@ var dates = [
   "2023/03/26",
   "2023/03/27",
   "2023/03/28",
-  "2023/03/29",
+  "2023/03/29", 
   "2023/03/30",
 ];
 
